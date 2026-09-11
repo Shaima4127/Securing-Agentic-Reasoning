@@ -40,11 +40,11 @@
 | [ReasoningBomb](https://arxiv.org/abs/2602.00154) | 🟦 T1 | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
 | [Adaptive Attacks](https://doi.org/10.18653/v1/2025.findings-naacl.395) | 🟧 T2 | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
 | [AdapTools](https://arxiv.org/abs/2602.20720) | 🟧 T2 | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟧 T2 | Indirect prompt | Multiple components | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ○ | ● |
+| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟧 T2 | Indirect prompt | Multiple | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ○ | ● |
 | [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟧 T2 | Indirect prompt | Action / tool use | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
 | [UDora](https://arxiv.org/abs/2503.01908) | 🟧 T2 | Indirect prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ○ | – | ● | ● |
-| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple components | CoT manipulation | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple components | Tool manipulation, Goal hijacking | Multi-turn | Mixed | ○ | ○ | – | ○ | ● |
+| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | CoT manipulation | Adaptive | Agent | ○ | ○ | – | ● | ● |
+| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | Tool manipulation, Goal hijacking | Multi-turn | Mixed | ○ | ○ | – | ○ | ● |
 | [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Agent | ○ | ○ | – | ○ | ● |
 | [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Mixed | ○ | ○ | – | ○ | ● |
 | [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |

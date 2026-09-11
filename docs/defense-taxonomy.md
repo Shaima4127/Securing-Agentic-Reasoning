@@ -12,14 +12,6 @@
 | 🟩 ![D2](https://img.shields.io/badge/D2-7DBD54?style=flat-square) | Runtime Agent Monitoring and Execution Control | 2 | 12 |
 | 🟦 ![D3](https://img.shields.io/badge/D3-6BAED6?style=flat-square) | Reasoning-Aware Process Defenses | 2 | 13 |
 
-## Agentic scope (G5) by cluster
-
-| Cluster | G5 = ADDRESSED |
-|---|---|
-| 🟧 D1 | 4 of 12 |
-| 🟩 D2 | 12 of 12 |
-| 🟦 D3 | 9 of 13 |
-
 ## Gap flag distributions
 
 | Gap | ● Addressed | ◐ Partial | ○ Present |
@@ -44,10 +36,10 @@
 | [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | Yes | LLM only | ○ | ○ | ○ | ◐ | ○ |
 | [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
 | [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Adaptive | No | Yes | No | Agent | ○ | ○ | ○ | ● | ● |
-| StruQ | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
+| [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
 | [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
 | [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟧 D1 | Guardrail Classifiers | Guardrail | Mixed | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
-| SecAlign | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Yes | Yes | Mixed | ○ | ○ | ○ | ● | ● |
+| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Yes | Yes | Mixed | ○ | ○ | ○ | ● | ● |
 | [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
 | [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | No | No | LLM only | ○ | ○ | ○ | ○ | ○ |
 | [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | No | No | Multi-agent | ○ | ○ | ○ | ○ | ● |
@@ -71,7 +63,7 @@
 | [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | Agent | ● | ● | ● | ● | ● |
 | [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
 | [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
-| IntentGuard | 🟦 D3 | Reasoning Repair and Consistency | Runtime monitoring, Reasoning consistency check, Guardrail | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
+| [IntentGuard](https://openreview.net/forum?id=kabNlhXQkT) | 🟦 D3 | Reasoning Repair and Consistency | Runtime monitoring, Reasoning consistency check, Guardrail | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
 | [Psg-Agent](https://arxiv.org/abs/2509.23614) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
 | [TrustAgent](https://doi.org/10.18653/v1/2024.findings-emnlp.585) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
 | [ICON](https://arxiv.org/abs/2602.20708) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Adaptive | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
@@ -88,7 +80,7 @@
   *Xiang et al. · 2024*
 - **PISanitizer** — [PISanitizer: Preventing Prompt Injection to Long-Context LLMs via Prompt Sanitization](https://arxiv.org/abs/2511.10720)  
   *Geng et al. · 2025*
-- **StruQ** — StruQ: Defending Against Prompt Injection with Structured Queries  
+- **StruQ** — [StruQ: Defending Against Prompt Injection with Structured Queries](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe)  
   *Chen et al. · 2025*
 - **Tool Result Parsing** — [Defense Against Indirect Prompt Injection via Tool Result Parsing](https://arxiv.org/abs/2601.04795)  
   *Yu et al. · 2026*
@@ -101,7 +93,7 @@
   *Ren et al. · 2025*
 - **Instruction Hierarchy** — [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](https://arxiv.org/abs/2404.13208)  
   *Wallace et al. · 2025*
-- **SecAlign** — SecAlign: Defending Against Prompt Injection with Preference Optimization  
+- **SecAlign** — [SecAlign: Defending Against Prompt Injection with Preference Optimization](https://doi.org/10.1145/3719027.3744836)  
   *Chen et al. · 2025*
 
 **Guardrail Classifiers** (3)
@@ -172,7 +164,7 @@
   *Xue et al. · 2026*
 - **Unreal Thinking** — [Unreal Thinking: Chain-of-Thought Hijacking via Two-stage Backdoor](https://arxiv.org/abs/2604.09235)  
   *Chang et al. · 2026*
-- **IntentGuard** — IntentGuard: Safeguard LLM Agents via Intent Alignment  
+- **IntentGuard** — [IntentGuard: Safeguard LLM Agents via Intent Alignment](https://openreview.net/forum?id=kabNlhXQkT)  
   *Cong et al. · 2026*
 - **TrustAgent** — [TrustAgent: Towards Safe and Trustworthy LLM-based Agents](https://doi.org/10.18653/v1/2024.findings-emnlp.585)  
   *Hua et al. · 2024*

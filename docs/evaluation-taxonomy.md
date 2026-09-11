@@ -26,23 +26,6 @@ Three properties are each necessary for an evaluation to say anything about whet
 | RIM = Explicit ∧ AA = Y | 0 |
 | **All three** | **0** |
 
-## Coded column distributions
-
-**Adaptive adversary (AA)**
-
-| AA | Papers |
-|---|---|
-| N | 48 |
-| Y | 16 |
-
-**Reasoning integrity metric (RIM)**
-
-| RIM | Papers |
-|---|---|
-| N/A | 41 |
-| Implicit | 20 |
-| Explicit | 3 |
-
 ## Gap flag distributions
 
 | Gap | ● Addressed | ○ Present |
@@ -57,72 +40,72 @@ Three properties are each necessary for an evaluation to say anything about whet
 
 ● addressed  ·  ◐ partially addressed  ·  ○ present  ·  – not applicable
 
-| Paper | Cluster | Subgroup | Scope | Reasoning type | Model access | Benchmark | AA | RIM | G1 | G2 | G3(E) | G4(T/E) | G5 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Attacker Moves Second](https://arxiv.org/abs/2510.09023) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | Mixed | Unspecified | White-box, Black-box | HarmBench; AgentDojo; OpenPromptInject; Adversarial Davinci | Yes | – | ○ | ○ | ○ | ● | ● |
-| [JailGuard](https://doi.org/10.1145/3724393) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | CoT | Black-box | Own 11,000-sample prompt-attack dataset, text + image (introduced) | No | – | ○ | ○ | ○ | ○ | ○ |
-| [DarkMind](https://arxiv.org/abs/2501.18617) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | CoT | Black-box | GSM8K; MATH; ASDiv; SVAMP; AQuA-RAT; commonsense and symbolic sets | No | Implicit | ● | ● | ○ | ○ | ○ |
-| [BadChain](https://arxiv.org/abs/2401.12242) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | CoT | Black-box | GSM8K; MATH; ASDiv; CSQA; StrategyQA; Letter | No | Implicit | ● | ● | ○ | ○ | ○ |
-| [Chain of Attack](https://doi.org/10.18653/v1/2025.findings-acl.514) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | CoT | Black-box | AdvBench | Yes | – | ○ | ○ | ○ | ● | ○ |
-| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | CoT, ReAct | Black-box | HarmBench | Yes | – | ○ | ○ | ○ | ● | ○ |
-| [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | ReAct | – | NotInject (introduced); PINT; BIPIA; WildGuard | No | – | ○ | ○ | ○ | ○ | ○ |
-| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Agent | ReAct | – | LongBench (Qasper, HotpotQA, GovReport, MultiNews, LCC, PassageRetrieval) | No | – | ○ | ○ | ○ | ○ | ● |
-| StruQ | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | – | – | AlpacaEval; HackAPrompt; BIPIA | Yes | – | ○ | ○ | ○ | ● | ○ |
-| [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | – | – | Open-source and novel prompt-injection / jailbreak sets; TensorTrust; Gandalf | No | – | ○ | ○ | ○ | ○ | ○ |
-| SecAlign | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Mixed | – | – | AlpacaEval2; SEP; InjecAgent | Yes | – | ○ | ○ | ○ | ● | ● |
-| [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | – | – | PromptShield benchmark (introduced); FourAttacks; HackAPrompt; OpenPromptInject | No | – | ○ | ○ | ○ | ○ | ○ |
-| [H-CoT](https://arxiv.org/abs/2502.12893) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | CoT | Black-box | Malicious-Educator (introduced) | No | – | ● | ○ | ○ | ○ | ○ |
-| [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | Mixed | Multiple | Black-box | NQ; HotpotQA; MS-MARCO; FEVER | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Multi-agent | ReAct | White-box, Black-box | BeaverTails; MaliciousInstruct; AdvBench (safety); HumanEval; MMLU; GSM8K (capability) | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentDoG](https://arxiv.org/abs/2601.18491) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | White-box | ATBench (introduced) | No | Implicit | ● | ● | ○ | ○ | ● |
-| [RTBAS](https://arxiv.org/abs/2502.08966) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | ReAct | – | AgentDojo; Accidental Leakage benchmark (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentDojo](https://arxiv.org/abs/2406.13352) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | ReAct | – | AgentDojo (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
-| [UDora](https://arxiv.org/abs/2503.01908) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | CoT / ReAct | White-box | InjecAgent; WebShop; AgentHarm | Yes | – | ● | ○ | ○ | ● | ● |
-| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | ReAct | White-box, Black-box | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
-| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | ReAct | Black-box | Agent-SafetyBench | Yes | – | ○ | ○ | ○ | ● | ● |
-| [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | ReAct | Black-box | AgentDojo; VWA-adv | Yes | – | ○ | ○ | ○ | ● | ● |
-| [Adaptive Attacks](https://doi.org/10.18653/v1/2025.findings-naacl.395) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | ReAct | White-box | InjecAgent; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
-| [AdapTools](https://arxiv.org/abs/2602.20720) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | CoT | Grey-box, Black-box | IPI-3K (introduced); InjecAgent; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
-| [SafeAgent](https://arxiv.org/abs/2604.17562) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | – | Agent Security Bench (ASB); InjecAgent | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentArmor](https://arxiv.org/abs/2508.01249) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | ReAct | Black-box | AgentDojo; Agent Security Bench (ASB) | No | – | ○ | ○ | ○ | ○ | ● |
-| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | ReAct | Black-box | MT-AgentRisk | No | – | ○ | ○ | ○ | ○ | ● |
-| IntentGuard | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | ReAct | – | Agent Security Bench (ASB) | No | Implicit | ● | ● | ● | ○ | ● |
-| [ProbGuard](https://arxiv.org/abs/2508.00500) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | ReAct | – | Apollo / uDrive with LawBreaker properties; SafeAgentBench | No | – | ○ | ○ | ○ | ○ | ● |
-| [GuardAgent](https://arxiv.org/abs/2406.09187) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | – | EICU-AC; Mind2Web-SC | No | – | ○ | ○ | ○ | ○ | ● |
-| [CaMeL](https://arxiv.org/abs/2503.18813) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | ReAct | Black-box | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
-| [Psg-Agent](https://arxiv.org/abs/2509.23614) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | – | Personalized safety benchmark, ~2,900 examples across 8 scenarios (introduced) | No | – | ○ | ○ | ● | ○ | ● |
-| [AGrail](https://doi.org/10.18653/v1/2025.acl-long.399) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | – | Mind2Web-SC; EICU-AC; Safe-OS; AdvWeb; EIA | No | – | ○ | ○ | ○ | ○ | ● |
-| [TrustAgent](https://doi.org/10.18653/v1/2024.findings-emnlp.585) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ReAct | – | 70-datapoint dataset across 5 domains (introduced) | No | – | ○ | ○ | ● | ○ | ● |
-| [AgentSentinel](https://doi.org/10.1145/3719027.3765064) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | ReAct | – | BadComputerUse | No | – | ○ | ○ | ○ | ○ | ● |
-| [IsolateGPT](https://doi.org/10.14722/ndss.2025.241131) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | ReAct | – | Enhanced security benchmark, 1,598 attacks (introduced); LangChain app benchmarks | No | – | ○ | ○ | ○ | ○ | ● |
-| [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
-| [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentVisor](https://arxiv.org/abs/2604.24118) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | OpenPromptInjection; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
-| [ICON](https://arxiv.org/abs/2602.20708) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | InjecAgent; AgentDojo; TrojanTools | No | Implicit | ● | ● | ● | ○ | ● |
-| ASB | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | Agent Security Bench / ASB (introduced) | No | – | ● | ○ | ○ | ○ | ● |
-| [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | CoT | Black-box | Agent-Driver; ReAct-StrategyQA; EHRAgent | No | – | ○ | ○ | ○ | ○ | ● |
-| AgentHarm | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | Multiple | Black-box | AgentHarm (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
-| [WASP](https://arxiv.org/abs/2504.18575) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | Multiple | Black-box | WASP, on the VisualWebArena sandbox (introduced) | No | Implicit | ● | ● | ○ | ○ | ● |
-| [InjecAgent](https://arxiv.org/abs/2403.02691) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | ReAct | Black-box | InjecAgent (introduced) | No | – | ● | ○ | ○ | ○ | ● |
-| [Agent-Safetybench](https://arxiv.org/abs/2412.14470) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | Unspecified | – | Agent-SafetyBench (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
-| [AgentDyn](https://arxiv.org/abs/2602.03117) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | – | – | AgentDyn (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
-| [ReasoningBomb](https://arxiv.org/abs/2602.00154) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | CoT | White-box | SimpleQA; SimpleBench; AIME 2024; LLM-Generated Puzzles; LRM-Generated Puzzles; ReasoningBomb attack prompts (128 / 256 / 512-token budgets) | No | Implicit | ● | ● | ○ | ○ | ○ |
-| [CoT Hijacking](https://arxiv.org/abs/2510.26418) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | CoT | Black-box | HarmBench | Yes | Implicit | ● | ● | ○ | ● | ○ |
-| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | Agent | Multiple | White-box | HotpotQA; FEVER | No | Implicit | ● | ● | ● | ○ | ● |
-| [Monitoring Reasoning Models](https://arxiv.org/abs/2503.11926) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | CoT | White-box | Agentic coding environment (repository unit-test tasks) | Yes | Implicit | ● | ● | ● | ● | ● |
-| [Thought Purity](https://arxiv.org/abs/2507.12314) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | CoT | White-box | Letter; CSQA; GSM8K; StrategyQA | No | Implicit | ● | ● | ● | ○ | ○ |
-| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | CoT | White-box | AdvBench; StrongREJECT; GSM8K; MMLU; XSTest | No | Implicit | ● | ● | ● | ○ | ○ |
-| [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | ReAct | Black-box | SHADE-Arena (Calendar Agendas, Bank Transfer) | Yes | Implicit | ● | ● | ● | ● | ● |
-| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | ReAct | – | SHADE-Arena; toy hidden-task settings | No | Implicit | ● | ● | ● | ○ | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | CoT | Black-box | Forced-CoT algebra tasks; GPQA; SHADE-Arena-style side-task environment | No | Explicit | ● | ● | ● | ○ | ○ |
-| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | CoT | Black-box | WMDP; MMLU; ProtocolQA | No | Implicit | ● | ● | ● | ○ | ○ |
-| [MonitorBench](https://arxiv.org/abs/2603.28590) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Mixed | CoT | – | MonitorBench (introduced) | Yes | Implicit | ● | ● | ● | ● | ● |
-| [AutoMonitor-Bench](https://arxiv.org/abs/2601.05752) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | – | – | AutoMonitor-Bench (introduced) | No | Implicit | ● | ● | ● | ○ | ○ |
-| [BONA FIDE](https://arxiv.org/abs/2605.25052) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | – | – | BONA FIDE (introduced) | No | Explicit | ● | ● | ● | ○ | ○ |
-| [CoT Faithfulness Audit](https://arxiv.org/abs/2505.05410) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | – | – | Paired multiple-choice hint prompts; 6 synthetic RL reward-hack environments | No | Implicit | ● | ● | ● | ○ | ○ |
-| [C2-Faith](https://arxiv.org/abs/2603.05167) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | – | – | C2-Faith, PRM800K-based (introduced) | No | Explicit | ● | ● | ○ | ○ | ○ |
-| [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | Agent | Multiple | Grey-box | WebShop (RAP); MIMIC-III and eICU (EHRAgent); MMLU (QA agent) | No | Implicit | ● | ● | ○ | ○ | ● |
-| [SHADE-Arena](https://arxiv.org/abs/2506.15740) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | ReAct | – | SHADE-Arena (introduced) | No | Implicit | ● | ● | ● | ○ | ● |
+| Paper | Cluster | Subgroup | Scope | Benchmark | AA | RIM | G1 | G2 | G3(E) | G4(T/E) | G5 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Attacker Moves Second](https://arxiv.org/abs/2510.09023) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | Mixed | HarmBench; AgentDojo; OpenPromptInject; Adversarial Davinci | Yes | – | ○ | ○ | ○ | ● | ● |
+| [JailGuard](https://doi.org/10.1145/3724393) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | Own 11,000-sample prompt-attack dataset, text + image (introduced) | No | – | ○ | ○ | ○ | ○ | ○ |
+| [DarkMind](https://arxiv.org/abs/2501.18617) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | GSM8K; MATH; ASDiv; SVAMP; AQuA-RAT; commonsense and symbolic sets | No | Implicit | ● | ● | ○ | ○ | ○ |
+| [BadChain](https://arxiv.org/abs/2401.12242) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | GSM8K; MATH; ASDiv; CSQA; StrategyQA; Letter | No | Implicit | ● | ● | ○ | ○ | ○ |
+| [Chain of Attack](https://doi.org/10.18653/v1/2025.findings-acl.514) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | AdvBench | Yes | – | ○ | ○ | ○ | ● | ○ |
+| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | HarmBench | Yes | – | ○ | ○ | ○ | ● | ○ |
+| [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | NotInject (introduced); PINT; BIPIA; WildGuard | No | – | ○ | ○ | ○ | ○ | ○ |
+| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Agent | LongBench (Qasper, HotpotQA, GovReport, MultiNews, LCC, PassageRetrieval) | No | – | ○ | ○ | ○ | ○ | ● |
+| [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | AlpacaEval; HackAPrompt; BIPIA | Yes | – | ○ | ○ | ○ | ● | ○ |
+| [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | Open-source and novel prompt-injection / jailbreak sets; TensorTrust; Gandalf | No | – | ○ | ○ | ○ | ○ | ○ |
+| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Mixed | AlpacaEval2; SEP; InjecAgent | Yes | – | ○ | ○ | ○ | ● | ● |
+| [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | PromptShield benchmark (introduced); FourAttacks; HackAPrompt; OpenPromptInject | No | – | ○ | ○ | ○ | ○ | ○ |
+| [H-CoT](https://arxiv.org/abs/2502.12893) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | Malicious-Educator (introduced) | No | – | ● | ○ | ○ | ○ | ○ |
+| [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | Mixed | NQ; HotpotQA; MS-MARCO; FEVER | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Multi-agent | BeaverTails; MaliciousInstruct; AdvBench (safety); HumanEval; MMLU; GSM8K (capability) | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentDoG](https://arxiv.org/abs/2601.18491) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | ATBench (introduced) | No | Implicit | ● | ● | ○ | ○ | ● |
+| [RTBAS](https://arxiv.org/abs/2502.08966) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentDojo; Accidental Leakage benchmark (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentDojo](https://arxiv.org/abs/2406.13352) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentDojo (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
+| [UDora](https://arxiv.org/abs/2503.01908) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | InjecAgent; WebShop; AgentHarm | Yes | – | ● | ○ | ○ | ● | ● |
+| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
+| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | Agent-SafetyBench | Yes | – | ○ | ○ | ○ | ● | ● |
+| [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | AgentDojo; VWA-adv | Yes | – | ○ | ○ | ○ | ● | ● |
+| [Adaptive Attacks](https://doi.org/10.18653/v1/2025.findings-naacl.395) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | InjecAgent; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
+| [AdapTools](https://arxiv.org/abs/2602.20720) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | IPI-3K (introduced); InjecAgent; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
+| [SafeAgent](https://arxiv.org/abs/2604.17562) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | Agent Security Bench (ASB); InjecAgent | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentArmor](https://arxiv.org/abs/2508.01249) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | AgentDojo; Agent Security Bench (ASB) | No | – | ○ | ○ | ○ | ○ | ● |
+| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | MT-AgentRisk | No | – | ○ | ○ | ○ | ○ | ● |
+| [IntentGuard](https://openreview.net/forum?id=kabNlhXQkT) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | Agent Security Bench (ASB) | No | Implicit | ● | ● | ● | ○ | ● |
+| [ProbGuard](https://arxiv.org/abs/2508.00500) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | Apollo / uDrive with LawBreaker properties; SafeAgentBench | No | – | ○ | ○ | ○ | ○ | ● |
+| [GuardAgent](https://arxiv.org/abs/2406.09187) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | EICU-AC; Mind2Web-SC | No | – | ○ | ○ | ○ | ○ | ● |
+| [CaMeL](https://arxiv.org/abs/2503.18813) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
+| [Psg-Agent](https://arxiv.org/abs/2509.23614) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | Personalized safety benchmark, ~2,900 examples across 8 scenarios (introduced) | No | – | ○ | ○ | ● | ○ | ● |
+| [AGrail](https://doi.org/10.18653/v1/2025.acl-long.399) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | Mind2Web-SC; EICU-AC; Safe-OS; AdvWeb; EIA | No | – | ○ | ○ | ○ | ○ | ● |
+| [TrustAgent](https://doi.org/10.18653/v1/2024.findings-emnlp.585) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Trajectory-level guardrails and repair | Agent | 70-datapoint dataset across 5 domains (introduced) | No | – | ○ | ○ | ● | ○ | ● |
+| [AgentSentinel](https://doi.org/10.1145/3719027.3765064) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Execution monitoring and action validation | Agent | BadComputerUse | No | – | ○ | ○ | ○ | ○ | ● |
+| [IsolateGPT](https://doi.org/10.14722/ndss.2025.241131) | 🟩 E2 | E2.2 Runtime Execution and Trajectory Safety — Containment and multi-turn risk | Agent | Enhanced security benchmark, 1,598 attacks (introduced); LangChain app benchmarks | No | – | ○ | ○ | ○ | ○ | ● |
+| [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
+| [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentDojo | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentVisor](https://arxiv.org/abs/2604.24118) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | OpenPromptInjection; AgentDojo | Yes | – | ○ | ○ | ○ | ● | ● |
+| [ICON](https://arxiv.org/abs/2602.20708) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | InjecAgent; AgentDojo; TrojanTools | No | Implicit | ● | ● | ● | ○ | ● |
+| [ASB](https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | Agent Security Bench / ASB (introduced) | No | – | ● | ○ | ○ | ○ | ● |
+| [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟩 E2 | E2.3 Attack-Led Agent-Execution Stress Testing | Agent | Agent-Driver; ReAct-StrategyQA; EHRAgent | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentHarm](https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentHarm (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
+| [WASP](https://arxiv.org/abs/2504.18575) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | WASP, on the VisualWebArena sandbox (introduced) | No | Implicit | ● | ● | ○ | ○ | ● |
+| [InjecAgent](https://arxiv.org/abs/2403.02691) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | InjecAgent (introduced) | No | – | ● | ○ | ○ | ○ | ● |
+| [Agent-Safetybench](https://arxiv.org/abs/2412.14470) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | Agent-SafetyBench (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
+| [AgentDyn](https://arxiv.org/abs/2602.03117) | 🟩 E2 | E2.1 Security-Utility Evaluation in Tool Environments | Agent | AgentDyn (introduced) | No | – | ○ | ○ | ○ | ○ | ● |
+| [ReasoningBomb](https://arxiv.org/abs/2602.00154) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | SimpleQA; SimpleBench; AIME 2024; LLM-Generated Puzzles; LRM-Generated Puzzles; ReasoningBomb attack prompts (128 / 256 / 512-token budgets) | No | Implicit | ● | ● | ○ | ○ | ○ |
+| [CoT Hijacking](https://arxiv.org/abs/2510.26418) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | HarmBench | Yes | Implicit | ● | ● | ○ | ● | ○ |
+| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | Agent | HotpotQA; FEVER | No | Implicit | ● | ● | ● | ○ | ● |
+| [Monitoring Reasoning Models](https://arxiv.org/abs/2503.11926) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | Agentic coding environment (repository unit-test tasks) | Yes | Implicit | ● | ● | ● | ● | ● |
+| [Thought Purity](https://arxiv.org/abs/2507.12314) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | Letter; CSQA; GSM8K; StrategyQA | No | Implicit | ● | ● | ● | ○ | ○ |
+| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | AdvBench; StrongREJECT; GSM8K; MMLU; XSTest | No | Implicit | ● | ● | ● | ○ | ○ |
+| [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | SHADE-Arena (Calendar Agendas, Bank Transfer) | Yes | Implicit | ● | ● | ● | ● | ● |
+| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | SHADE-Arena; toy hidden-task settings | No | Implicit | ● | ● | ● | ○ | ● |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | Forced-CoT algebra tasks; GPQA; SHADE-Arena-style side-task environment | No | Explicit | ● | ● | ● | ○ | ○ |
+| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | WMDP; MMLU; ProtocolQA | No | Implicit | ● | ● | ● | ○ | ○ |
+| [MonitorBench](https://arxiv.org/abs/2603.28590) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Mixed | MonitorBench (introduced) | Yes | Implicit | ● | ● | ● | ● | ● |
+| [AutoMonitor-Bench](https://arxiv.org/abs/2601.05752) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | AutoMonitor-Bench (introduced) | No | Implicit | ● | ● | ● | ○ | ○ |
+| [BONA FIDE](https://arxiv.org/abs/2605.25052) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | BONA FIDE (introduced) | No | Explicit | ● | ● | ● | ○ | ○ |
+| [CoT Faithfulness Audit](https://arxiv.org/abs/2505.05410) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | Paired multiple-choice hint prompts; 6 synthetic RL reward-hack environments | No | Implicit | ● | ● | ● | ○ | ○ |
+| [C2-Faith](https://arxiv.org/abs/2603.05167) | 🟦 E3 | E3.3 Faithfulness Metrics and Judge Validation | LLM only | C2-Faith, PRM800K-based (introduced) | No | Explicit | ● | ● | ○ | ○ | ○ |
+| [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | Agent | WebShop (RAP); MIMIC-III and eICU (EHRAgent); MMLU (QA agent) | No | Implicit | ● | ● | ○ | ○ | ● |
+| [SHADE-Arena](https://arxiv.org/abs/2506.15740) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | SHADE-Arena (introduced) | No | Implicit | ● | ● | ● | ○ | ● |
 
 ## Papers by subgroup
 
@@ -158,11 +141,11 @@ Three properties are each necessary for an evaluation to say anything about whet
 
 - **PISanitizer** — [PISanitizer: Preventing Prompt Injection to Long-Context LLMs via Prompt Sanitization](https://arxiv.org/abs/2511.10720)  
   *Geng et al. · 2025*
-- **StruQ** — StruQ: Defending Against Prompt Injection with Structured Queries  
+- **StruQ** — [StruQ: Defending Against Prompt Injection with Structured Queries](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe)  
   *Chen et al. · 2025*
 - **Instruction Hierarchy** — [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](https://arxiv.org/abs/2404.13208)  
   *Wallace et al. · 2025*
-- **SecAlign** — SecAlign: Defending Against Prompt Injection with Preference Optimization  
+- **SecAlign** — [SecAlign: Defending Against Prompt Injection with Preference Optimization](https://doi.org/10.1145/3719027.3744836)  
   *Chen et al. · 2025*
 
 ### 🟩 E2 — Agent Execution and Trajectory Safety Evaluation
@@ -171,7 +154,7 @@ Three properties are each necessary for an evaluation to say anything about whet
 
 - **AgentMonitor** — [AGENTMONITOR: A PLUG-AND-PLAY FRAMEWORK FOR PREDICTIVE AND SECURE MULTI-AGENT SYSTEMS](https://arxiv.org/abs/2408.14972)  
   *Chan et al. · 2024*
-- **IntentGuard** — IntentGuard: Safeguard LLM Agents via Intent Alignment  
+- **IntentGuard** — [IntentGuard: Safeguard LLM Agents via Intent Alignment](https://openreview.net/forum?id=kabNlhXQkT)  
   *Cong et al. · 2026*
 - **ProbGuard** — [ProbGuard: Probabilistic Runtime Monitoring for LLM Agent Safety](https://arxiv.org/abs/2508.00500)  
   *Wang et al. · 2026*
@@ -207,9 +190,9 @@ Three properties are each necessary for an evaluation to say anything about whet
   *Ying et al. · 2026*
 - **ICON** — [ICON: Indirect Prompt Injection Defense for Agents based on Inference-Time Correction](https://arxiv.org/abs/2602.20708)  
   *Wang et al. · 2026*
-- **ASB** — Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents  
+- **ASB** — [Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/5750f91d8fb9d5c02bd8ad2c3b44456b-Abstract-Conference.html)  
   *Zhang et al. · 2025*
-- **AgentHarm** — AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents  
+- **AgentHarm** — [AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/c493d23af93118975cdbc32cbe7323f5-Abstract-Conference.html)  
   *Andriushchenko et al. · 2025*
 - **WASP** — [WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks](https://arxiv.org/abs/2504.18575)  
   *Evtimov et al. · 2025*
