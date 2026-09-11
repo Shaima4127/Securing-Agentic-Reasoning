@@ -47,7 +47,7 @@
 | [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple components | Tool manipulation, Goal hijacking | Multi-turn | Mixed | ○ | ○ | – | ○ | ● |
 | [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Agent | ○ | ○ | – | ○ | ● |
 | [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Mixed | ○ | ○ | – | ○ | ● |
-| MINJA | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |
+| [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |
 | [Attacker Moves Second](https://arxiv.org/abs/2510.09023) | 🟩 T3 | Direct prompt | Input / perception | Goal hijacking | Adaptive | Mixed | ○ | ○ | – | ● | ● |
 | [Auto-RT](https://arxiv.org/abs/2501.01830) | 🟩 T3 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ○ | ○ | – | ● | ○ |
 | [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟩 T3 | Direct prompt | Reasoning / planning | Goal hijacking | Adaptive | LLM only | ○ | ○ | ○ | ● | ○ |
@@ -122,7 +122,7 @@ Attack classes follow Fig. 3 of the paper.
   *Chen et al. · 2024*
 - **PoisonedRAG** — [PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2402.07867)  
   *Zou et al. · 2025*
-- **MINJA** — Memory Injection Attacks on LLM Agents via Query-Only Interaction  
+- **MINJA** — [Memory Injection Attacks on LLM Agents via Query-Only Interaction](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html)  
   *Dong et al. · 2025*
 
 ### 🟩 T3 — Adaptive & Multi-turn Attacks
