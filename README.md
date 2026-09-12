@@ -1,6 +1,6 @@
 # Securing Agentic Reasoning
 
-**A Survey of Threats, Defenses, and Evaluation Frameworks for AI Agents**
+**A Survey of Threats, Defenses, and Evaluation for AI Agents**
 
 <!-- Add a paper badge once a preprint or DOI exists, e.g.
 [![Paper](https://img.shields.io/badge/paper-arXiv-b31b1b?style=flat-square)](https://arxiv.org/abs/XXXX.XXXXX)
@@ -21,7 +21,7 @@ This repository provides the supporting annotation data, including paper-level t
 
 ## 📄 Survey
 
-**Title:** Securing Agentic Reasoning: A Survey of Threats, Defenses, and Evaluation Frameworks for AI Agents  
+**Title:** Securing Agentic Reasoning: A Survey of Threats, Defenses, and Evaluation for AI Agents  
 **Authors:** Shaima Ahmad Freja, Ferhat Ozgur Catak, Chunming Rong  
 **Institution:** University of Stavanger, Norway  
 **Status:** Currently under peer review
@@ -117,7 +117,7 @@ The documents here are generated from the project's annotation workbooks and car
 ```bibtex
 @misc{freja2026securing,
   title  = {Securing Agentic Reasoning: A Survey of Threats, Defenses,
-            and Evaluation Frameworks for AI Agents},
+            and Evaluation for AI Agents},
   author = {Freja, Shaima Ahmad and Catak, Ferhat Ozgur and Rong, Chunming},
   year   = {2026},
   note   = {Under review}
