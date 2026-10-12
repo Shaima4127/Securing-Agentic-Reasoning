@@ -17,7 +17,7 @@ This survey uses reasoning-layer security as the organizing lens connecting thre
 
 Across the corpus, defenses and evaluations remain concentrated at the boundary and execution layers, while reasoning-aware mechanisms, adaptive-adversary testing, and validated reasoning-integrity measurement remain limited. None of the 64 evaluation papers combines validated reasoning-integrity measurement, an adaptive adversary, and agentic scope.
 
-This repository provides the supporting annotation data, including paper-level taxonomy assignments, G1–G5 gap coding, and benchmark properties used in the survey.
+This repository provides the supporting annotation data, including paper-level taxonomy assignments, G1–G5 gap coding, and benchmark properties used in the survey, together with the protocol documenting how the corpus was searched and screened.
 
 ## 📄 Survey
 
@@ -46,6 +46,7 @@ This repository provides the supporting annotation data, including paper-level t
 | [Evaluation taxonomy](docs/evaluation-taxonomy.md) | 64 papers, E1–E3, grouped by subgroup |
 | [Paper matrix](docs/annotation-matrix.md) | All 71 papers against every coded column |
 | [Benchmark inventory](docs/benchmark-inventory.md) | 26 evaluation instruments and their properties |
+| [Search protocol](docs/search-protocol.md) | Search queries, screening, and eligibility criteria behind the corpus |
 
 Every paper is listed by the short name used in the manuscript and linked to its publication.
 
@@ -107,7 +108,8 @@ Flags render as ● addressed · ◐ partially addressed · ○ present · – n
     ├── defense-taxonomy.md
     ├── evaluation-taxonomy.md
     ├── annotation-matrix.md
-    └── benchmark-inventory.md
+    ├── benchmark-inventory.md
+    └── search-protocol.md
 ```
 
 The documents here are generated from the project's annotation workbooks and carry a do-not-edit banner. The workbooks themselves are not published; researchers wanting them can contact the authors.
