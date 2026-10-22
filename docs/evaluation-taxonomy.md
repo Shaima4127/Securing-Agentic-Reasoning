@@ -19,10 +19,10 @@ Three properties are each necessary for an evaluation to say anything about whet
 | Condition | Papers (of 64) |
 |---|---|
 | RIM = Explicit | 3 |
-| AA = Y | 16 |
-| G5 = ADDRESSED | 44 |
-| AA = Y ∧ G5 = ADDRESSED | 12 |
-| RIM = Explicit ∧ G5 = ADDRESSED | 0 |
+| AA = Y | 15 |
+| G5 = ADDRESSED | 45 |
+| AA = Y ∧ G5 = ADDRESSED | 11 |
+| RIM = Explicit ∧ G5 = ADDRESSED | 1 |
 | RIM = Explicit ∧ AA = Y | 0 |
 | **All three** | **0** |
 
@@ -33,8 +33,8 @@ Three properties are each necessary for an evaluation to say anything about whet
 | **G1** Reasoning Observability | 27 | 37 |
 | **G2** Reasoning Integrity Metric | 23 | 41 |
 | **G3 (E)** Defense Capability | 17 | 47 |
-| **G4 (T/E)** Adaptivity | 16 | 48 |
-| **G5** Agentic Scope | 44 | 20 |
+| **G4 (T/E)** Adaptivity | 15 | 49 |
+| **G5** Agentic Scope | 45 | 19 |
 
 ## Per-paper annotations
 
@@ -49,10 +49,10 @@ Three properties are each necessary for an evaluation to say anything about whet
 | [Chain of Attack](https://doi.org/10.18653/v1/2025.findings-acl.514) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | AdvBench | Yes | – | ○ | ○ | ○ | ● | ○ |
 | [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | HarmBench | Yes | – | ○ | ○ | ○ | ● | ○ |
 | [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | NotInject (introduced); PINT; BIPIA; WildGuard | No | – | ○ | ○ | ○ | ○ | ○ |
-| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Agent | LongBench (Qasper, HotpotQA, GovReport, MultiNews, LCC, PassageRetrieval) | No | – | ○ | ○ | ○ | ○ | ● |
+| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Mixed | LongBench (Qasper, HotpotQA, GovReport, MultiNews, LCC, PassageRetrieval) | No | – | ○ | ○ | ○ | ○ | ● |
 | [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | AlpacaEval; HackAPrompt; BIPIA | Yes | – | ○ | ○ | ○ | ● | ○ |
 | [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | LLM only | Open-source and novel prompt-injection / jailbreak sets; TensorTrust; Gandalf | No | – | ○ | ○ | ○ | ○ | ○ |
-| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Mixed | AlpacaEval2; SEP; InjecAgent | Yes | – | ○ | ○ | ○ | ● | ● |
+| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 E1 | E1.2 Prompt-Injection Defense Robustness | Mixed | AlpacaEval2; SEP; InjecAgent | No | – | ○ | ○ | ○ | ○ | ● |
 | [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 E1 | E1.1 Guardrail Detection and Defense Reliability | LLM only | PromptShield benchmark (introduced); FourAttacks; HackAPrompt; OpenPromptInject | No | – | ○ | ○ | ○ | ○ | ○ |
 | [H-CoT](https://arxiv.org/abs/2502.12893) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | LLM only | Malicious-Educator (introduced) | No | – | ● | ○ | ○ | ○ | ○ |
 | [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 E1 | E1.3 Attack-Led Robustness Evaluation | Mixed | NQ; HotpotQA; MS-MARCO; FEVER | No | – | ○ | ○ | ○ | ○ | ● |
@@ -97,7 +97,7 @@ Three properties are each necessary for an evaluation to say anything about whet
 | [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 E3 | E3.1 Reasoning Manipulation and Repair Evaluation | LLM only | AdvBench; StrongREJECT; GSM8K; MMLU; XSTest | No | Implicit | ● | ● | ● | ○ | ○ |
 | [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | SHADE-Arena (Calendar Agendas, Bank Transfer) | Yes | Implicit | ● | ● | ● | ● | ● |
 | [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Agent | SHADE-Arena; toy hidden-task settings | No | Implicit | ● | ● | ● | ○ | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | Forced-CoT algebra tasks; GPQA; SHADE-Arena-style side-task environment | No | Explicit | ● | ● | ● | ○ | ○ |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Mixed | Forced-CoT algebra tasks; GPQA; SHADE-Arena-style side-task environment | No | Explicit | ● | ● | ● | ○ | ● |
 | [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | WMDP; MMLU; ProtocolQA | No | Implicit | ● | ● | ● | ○ | ○ |
 | [MonitorBench](https://arxiv.org/abs/2603.28590) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | Mixed | MonitorBench (introduced) | Yes | Implicit | ● | ● | ● | ● | ● |
 | [AutoMonitor-Bench](https://arxiv.org/abs/2601.05752) | 🟦 E3 | E3.2 CoT Monitorability and Evasion Evaluation | LLM only | AutoMonitor-Bench (introduced) | No | Implicit | ● | ● | ● | ○ | ○ |

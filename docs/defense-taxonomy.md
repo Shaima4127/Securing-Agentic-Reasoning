@@ -19,8 +19,8 @@
 | **G1** Reasoning Observability | 11 | 0 | 26 |
 | **G2** Reasoning Integrity Metric | 11 | 0 | 26 |
 | **G3 (D)** Defense Capability | 12 | 2 | 23 |
-| **G4 (D)** Adaptivity | 12 | 12 | 13 |
-| **G5** Agentic Scope | 25 | 0 | 12 |
+| **G4 (D)** Adaptivity | 11 | 13 | 13 |
+| **G5** Agentic Scope | 26 | 0 | 11 |
 
 `PARTIAL` is admissible only in G3 (D) and G4 (D); it is not a valid value for G1, G2, or G5.
 
@@ -35,11 +35,11 @@
 | [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
 | [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | Yes | LLM only | ○ | ○ | ○ | ◐ | ○ |
 | [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
-| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Adaptive | No | Yes | No | Agent | ○ | ○ | ○ | ● | ● |
+| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Adaptive | No | Yes | No | Mixed | ○ | ○ | ○ | ● | ● |
 | [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
 | [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
 | [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟧 D1 | Guardrail Classifiers | Guardrail | Mixed | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
-| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Yes | Yes | Mixed | ○ | ○ | ○ | ● | ● |
+| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | No | Mixed | ○ | ○ | ○ | ◐ | ● |
 | [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
 | [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | No | No | LLM only | ○ | ○ | ○ | ○ | ○ |
 | [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | No | No | Multi-agent | ○ | ○ | ○ | ○ | ● |
@@ -61,7 +61,7 @@
 | [Thought Purity](https://arxiv.org/abs/2507.12314) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Adaptive | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
 | [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Static | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
 | [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | Agent | ● | ● | ● | ● | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | Mixed | ● | ● | ● | ● | ● |
 | [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
 | [IntentGuard](https://openreview.net/forum?id=kabNlhXQkT) | 🟦 D3 | Reasoning Repair and Consistency | Runtime monitoring, Reasoning consistency check, Guardrail | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
 | [Psg-Agent](https://arxiv.org/abs/2509.23614) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |

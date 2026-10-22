@@ -21,7 +21,7 @@
 | **G2** Reasoning Integrity Metric | 13 | 0 | 18 | 0 |
 | **G3 (T)** Defense Capability | 5 | 2 | 3 | 21 |
 | **G4 (T/E)** Adaptivity | 13 | 0 | 18 | 0 |
-| **G5** Agentic Scope | 16 | 0 | 15 | 0 |
+| **G5** Agentic Scope | 17 | 0 | 14 | 0 |
 
 ## Per-paper annotations
 
@@ -44,7 +44,7 @@
 | [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟧 T2 | Indirect prompt | Action / tool use | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
 | [UDora](https://arxiv.org/abs/2503.01908) | 🟧 T2 | Indirect prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ○ | – | ● | ● |
 | [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | CoT manipulation | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | Tool manipulation, Goal hijacking | Multi-turn | Mixed | ○ | ○ | – | ○ | ● |
+| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | Tool manipulation, Goal hijacking | Multi-turn | Multi-agent | ○ | ○ | – | ○ | ● |
 | [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Agent | ○ | ○ | – | ○ | ● |
 | [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Mixed | ○ | ○ | – | ○ | ● |
 | [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |
@@ -58,7 +58,7 @@
 | [CoT-LearnedObfuscation](https://arxiv.org/abs/2601.23086) | 🟪 T4 | Model customization | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
 | [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟪 T4 | Environment | Reasoning / planning | CoT manipulation, Goal hijacking | Adaptive | Agent | ● | ● | – | ● | ● |
 | [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ● | ● | ○ | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ● | ● | ● | ○ | ○ |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Mixed | ● | ● | ● | ○ | ● |
 | [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | ● | ○ | ○ |
 
 ## Papers by attack class
