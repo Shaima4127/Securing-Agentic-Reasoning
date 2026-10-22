@@ -13,9 +13,9 @@
 
 LLM agents increasingly operate through a persistent reasoning–action loop, planning across multiple steps, invoking tools, processing external content, and maintaining memory. This expands the security surface beyond conventional input–output robustness.
 
-This survey uses reasoning-layer security as the organizing lens connecting threats, defenses, and evaluation. From a structured review of 89 papers (2024–2026), we develop three complementary taxonomies over 71 annotated empirical studies: how adversaries compromise reasoning, where defenses intervene in the agent pipeline, and which evidence layer evaluations observe — boundary behavior, execution trajectories, or reasoning processes.
+This survey uses reasoning-layer security as the organizing lens connecting threats, defenses, and evaluation. From a structured review of 89 papers (2024–2026), we develop three complementary taxonomies over 71 annotated empirical studies: how adversaries compromise reasoning, where defenses intervene in the agent pipeline, and which evidence layer evaluations observe — boundary behavior, execution trajectories, or intermediate reasoning representations.
 
-Across the corpus, defenses and evaluations remain concentrated at the boundary and execution layers, while reasoning-aware mechanisms, adaptive-adversary testing, and validated reasoning-integrity measurement remain limited. None of the 64 evaluation papers combines validated reasoning-integrity measurement, an adaptive adversary, and agentic scope.
+Across the annotated corpus, defenses and evaluations remain concentrated at the input–output boundary and execution layers, whereas reasoning-aware mechanisms remain limited. None of the 64 evaluation papers simultaneously combines explicit reasoning-integrity measurement, adaptive-adversary testing, and genuine agentic evaluation scope.
 
 This repository provides the supporting annotation data, including paper-level taxonomy assignments, G1–G5 gap coding, and benchmark properties used in the survey, together with the protocol documenting how the corpus was searched and screened.
 
@@ -45,6 +45,7 @@ This repository provides the supporting annotation data, including paper-level t
 | [Defense taxonomy](docs/defense-taxonomy.md) | 37 papers, D1–D3, grouped by sub-cluster |
 | [Evaluation taxonomy](docs/evaluation-taxonomy.md) | 64 papers, E1–E3, grouped by subgroup |
 | [Paper matrix](docs/annotation-matrix.md) | All 71 papers against every coded column |
+| [Column definitions](docs/column-definitions.md) | Definitions and permitted values for every coded column |
 | [Benchmark inventory](docs/benchmark-inventory.md) | 26 evaluation instruments and their properties |
 | [Search protocol](docs/search-protocol.md) | Search queries, screening, and eligibility criteria behind the corpus |
 
@@ -108,11 +109,12 @@ Flags render as ● addressed · ◐ partially addressed · ○ present · – n
     ├── defense-taxonomy.md
     ├── evaluation-taxonomy.md
     ├── annotation-matrix.md
+    ├── column-definitions.md
     ├── benchmark-inventory.md
     └── search-protocol.md
 ```
 
-The documents here are generated from the project's annotation workbooks and carry a do-not-edit banner. The workbooks themselves are not published; researchers wanting them can contact the authors.
+The taxonomy, matrix, and benchmark pages are generated from the project's annotation workbooks and carry a do-not-edit banner. The workbooks themselves are not published; researchers wanting them can contact the authors.
 
 ## Citation
 
