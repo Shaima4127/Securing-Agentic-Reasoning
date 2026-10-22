@@ -28,7 +28,7 @@ This repository provides the supporting annotation data, including paper-level t
 
 ![Roadmap of the survey](figures/roadmap.png)
 
-*Roadmap of the survey. Cluster colours indicate the agent layer a cluster concerns: boundary, execution, and reasoning. T3 is defined by the temporal structure of an attack rather than by a single layer, so it retains the threat colour of §4.*
+*Roadmap of the survey. Within each taxonomy, cluster colour follows cluster order (first, second, third, fourth), consistent with the taxonomy trees and tables.*
 
 ## ✨ Contributions
 
