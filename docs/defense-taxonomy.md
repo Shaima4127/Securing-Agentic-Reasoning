@@ -6,7 +6,7 @@
 
 ## Clusters
 
-| Cluster | Name | Sub-clusters | Papers |
+| Cluster | Name | Subclusters | Papers |
 |---|---|---|---|
 | 🟧 ![D1](https://img.shields.io/badge/D1-FC8D62?style=flat-square) | Boundary Filtering and Guardrails | 3 | 12 |
 | 🟩 ![D2](https://img.shields.io/badge/D2-7DBD54?style=flat-square) | Runtime Agent Monitoring and Execution Control | 2 | 12 |
@@ -28,51 +28,51 @@
 
 ● addressed  ·  ◐ partially addressed  ·  ○ present  ·  – not applicable
 
-| Paper | Cluster | Sub-cluster | Pattern | Structure | Reasoning-aware | ARE | AA | Scope | G1 | G2 | G3(D) | G4(D) | G5 |
+| Paper | Cluster | Subcluster | Pattern | Structure | Reasoning-aware | ARE | AA | Scope | G1 | G2 | G3(D) | G4(D) | G5 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [JailGuard](https://doi.org/10.1145/3724393) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization, Output verification | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
-| [BadChain](https://arxiv.org/abs/2401.12242) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | No | No | LLM only | ● | ● | ◐ | ○ | ○ |
-| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
-| [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | Yes | LLM only | ○ | ○ | ○ | ◐ | ○ |
-| [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
-| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Adaptive | No | Yes | No | Mixed | ○ | ○ | ○ | ● | ● |
-| [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
-| [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
-| [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟧 D1 | Guardrail Classifiers | Guardrail | Mixed | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
-| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 D1 | Adversarial Training and Alignment | Adversarial training | Static | No | Partial | No | Mixed | ○ | ○ | ○ | ◐ | ● |
-| [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟧 D1 | Content Filtering and Sanitization | Input sanitization | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
-| [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 D1 | Guardrail Classifiers | Guardrail | Static | No | No | No | LLM only | ○ | ○ | ○ | ○ | ○ |
-| [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | No | No | Multi-agent | ○ | ○ | ○ | ○ | ● |
-| [RTBAS](https://arxiv.org/abs/2502.08966) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
-| [SafeAgent](https://arxiv.org/abs/2604.17562) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring, Sandboxing | Adaptive | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
-| [AgentArmor](https://arxiv.org/abs/2508.01249) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
-| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 D2 | Runtime Monitoring and Guardrails | Sandboxing, Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
-| [ProbGuard](https://arxiv.org/abs/2508.00500) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
-| [GuardAgent](https://arxiv.org/abs/2406.09187) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring, Guardrail | Mixed | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
-| [CaMeL](https://arxiv.org/abs/2503.18813) | 🟩 D2 | Execution Isolation and Sandboxing | Sandboxing, Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
-| [AGrail](https://doi.org/10.18653/v1/2025.acl-long.399) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Adaptive | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
-| [AgentSentinel](https://doi.org/10.1145/3719027.3765064) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring | Mixed | No | Yes | No | Agent | ○ | ○ | ○ | ● | ● |
-| [IsolateGPT](https://doi.org/10.14722/ndss.2025.241131) | 🟩 D2 | Execution Isolation and Sandboxing | Sandboxing | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
-| [AgentVisor](https://arxiv.org/abs/2604.24118) | 🟩 D2 | Runtime Monitoring and Guardrails | Runtime monitoring, Sandboxing | Static | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
-| [AgentDoG](https://arxiv.org/abs/2601.18491) | 🟦 D3 | Reasoning-Trace Monitoring | Guardrail, Runtime monitoring | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
-| [STAC](https://arxiv.org/abs/2509.25624) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Static | Partial | Yes | Yes | Agent | ○ | ○ | ◐ | ● | ● |
-| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | No | No | Agent | ● | ● | ● | ○ | ● |
-| [Monitoring Reasoning Models](https://arxiv.org/abs/2503.11926) | 🟦 D3 | Reasoning Repair and Consistency | Runtime monitoring, Reasoning consistency check | Mixed | Yes | Yes | Yes | Agent | ● | ● | ● | ● | ● |
-| [Thought Purity](https://arxiv.org/abs/2507.12314) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Adaptive | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
-| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Static | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
-| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | Agent | ● | ● | ● | ● | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | Mixed | ● | ● | ● | ● | ● |
-| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
-| [IntentGuard](https://openreview.net/forum?id=kabNlhXQkT) | 🟦 D3 | Reasoning Repair and Consistency | Runtime monitoring, Reasoning consistency check, Guardrail | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
-| [Psg-Agent](https://arxiv.org/abs/2509.23614) | 🟦 D3 | Reasoning-Trace Monitoring | Runtime monitoring | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
-| [TrustAgent](https://doi.org/10.18653/v1/2024.findings-emnlp.585) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
-| [ICON](https://arxiv.org/abs/2602.20708) | 🟦 D3 | Reasoning Repair and Consistency | Reasoning consistency check | Adaptive | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
+| [JailGuard](https://doi.org/10.1145/3724393) | 🟧 D1 | D1.1 Content filtering and sanitization | Input sanitization, Output verification | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
+| [BadChain](https://arxiv.org/abs/2401.12242) | 🟧 D1 | D1.1 Content filtering and sanitization | Input sanitization | Static | No | No | No | LLM only | ● | ● | ◐ | ○ | ○ |
+| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟧 D1 | D1.3 Adversarial training and alignment | Adversarial training | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
+| [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟧 D1 | D1.3 Adversarial training and alignment | Adversarial training | Static | No | Partial | Yes | LLM only | ○ | ○ | ○ | ◐ | ○ |
+| [PIGuard](https://doi.org/10.18653/v1/2025.acl-long.1468) | 🟧 D1 | D1.2 Guardrail classifiers | Guardrail | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
+| [PISanitizer](https://arxiv.org/abs/2511.10720) | 🟧 D1 | D1.1 Content filtering and sanitization | Input sanitization | Adaptive | No | Yes | No | Mixed | ○ | ○ | ○ | ● | ● |
+| [StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe) | 🟧 D1 | D1.1 Content filtering and sanitization | Input sanitization | Static | No | Yes | Yes | LLM only | ○ | ○ | ○ | ● | ○ |
+| [Instruction Hierarchy](https://arxiv.org/abs/2404.13208) | 🟧 D1 | D1.3 Adversarial training and alignment | Adversarial training | Static | No | Partial | No | LLM only | ○ | ○ | ○ | ◐ | ○ |
+| [PromptArmor](https://arxiv.org/abs/2507.15219) | 🟧 D1 | D1.2 Guardrail classifiers | Guardrail | Mixed | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
+| [SecAlign](https://doi.org/10.1145/3719027.3744836) | 🟧 D1 | D1.3 Adversarial training and alignment | Adversarial training | Static | No | Partial | No | Mixed | ○ | ○ | ○ | ◐ | ● |
+| [Tool Result Parsing](https://arxiv.org/abs/2601.04795) | 🟧 D1 | D1.1 Content filtering and sanitization | Input sanitization | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
+| [PromptShield](https://doi.org/10.1145/3714393.3726501) | 🟧 D1 | D1.2 Guardrail classifiers | Guardrail | Static | No | No | No | LLM only | ○ | ○ | ○ | ○ | ○ |
+| [AgentMonitor](https://arxiv.org/abs/2408.14972) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Static | No | No | No | Multi-agent | ○ | ○ | ○ | ○ | ● |
+| [RTBAS](https://arxiv.org/abs/2502.08966) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
+| [SafeAgent](https://arxiv.org/abs/2604.17562) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring, Sandboxing | Adaptive | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
+| [AgentArmor](https://arxiv.org/abs/2508.01249) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
+| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Sandboxing, Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
+| [ProbGuard](https://arxiv.org/abs/2508.00500) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Static | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
+| [GuardAgent](https://arxiv.org/abs/2406.09187) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring, Guardrail | Mixed | No | No | No | Agent | ○ | ○ | ○ | ○ | ● |
+| [CaMeL](https://arxiv.org/abs/2503.18813) | 🟩 D2 | D2.2 Execution isolation and sandboxing | Sandboxing, Runtime monitoring | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
+| [AGrail](https://doi.org/10.18653/v1/2025.acl-long.399) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Adaptive | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
+| [AgentSentinel](https://doi.org/10.1145/3719027.3765064) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring | Mixed | No | Yes | No | Agent | ○ | ○ | ○ | ● | ● |
+| [IsolateGPT](https://doi.org/10.14722/ndss.2025.241131) | 🟩 D2 | D2.2 Execution isolation and sandboxing | Sandboxing | Static | No | Partial | No | Agent | ○ | ○ | ○ | ◐ | ● |
+| [AgentVisor](https://arxiv.org/abs/2604.24118) | 🟩 D2 | D2.1 Runtime monitoring and guardrails | Runtime monitoring, Sandboxing | Static | No | Yes | Yes | Agent | ○ | ○ | ○ | ● | ● |
+| [AgentDoG](https://arxiv.org/abs/2601.18491) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Guardrail, Runtime monitoring | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
+| [STAC](https://arxiv.org/abs/2509.25624) | 🟦 D3 | D3.1 Reasoning repair and consistency | Reasoning consistency check | Static | Partial | Yes | Yes | Agent | ○ | ○ | ◐ | ● | ● |
+| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Runtime monitoring | Static | Yes | No | No | Agent | ● | ● | ● | ○ | ● |
+| [Monitoring Reasoning Models](https://arxiv.org/abs/2503.11926) | 🟦 D3 | D3.1 Reasoning repair and consistency | Runtime monitoring, Reasoning consistency check | Mixed | Yes | Yes | Yes | Agent | ● | ● | ● | ● | ● |
+| [Thought Purity](https://arxiv.org/abs/2507.12314) | 🟦 D3 | D3.1 Reasoning repair and consistency | Reasoning consistency check | Adaptive | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
+| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 D3 | D3.1 Reasoning repair and consistency | Reasoning consistency check | Static | Yes | No | No | LLM only | ● | ● | ● | ○ | ○ |
+| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Runtime monitoring | Static | Yes | Yes | No | Agent | ● | ● | ● | ● | ● |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Runtime monitoring | Static | Yes | Yes | No | Mixed | ● | ● | ● | ● | ● |
+| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Runtime monitoring | Static | Yes | Yes | No | LLM only | ● | ● | ● | ● | ○ |
+| [IntentGuard](https://openreview.net/forum?id=kabNlhXQkT) | 🟦 D3 | D3.1 Reasoning repair and consistency | Runtime monitoring, Reasoning consistency check, Guardrail | Static | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
+| [PSG-Agent](https://arxiv.org/abs/2509.23614) | 🟦 D3 | D3.2 Reasoning-trace monitoring | Runtime monitoring | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
+| [TrustAgent](https://doi.org/10.18653/v1/2024.findings-emnlp.585) | 🟦 D3 | D3.1 Reasoning repair and consistency | Reasoning consistency check | Mixed | Yes | No | No | Agent | ○ | ○ | ● | ○ | ● |
+| [ICON](https://arxiv.org/abs/2602.20708) | 🟦 D3 | D3.1 Reasoning repair and consistency | Reasoning consistency check | Adaptive | Yes | Partial | No | Agent | ● | ● | ● | ◐ | ● |
 
-## Papers by sub-cluster
+## Papers by subcluster
 
 ### 🟧 D1 — Boundary Filtering and Guardrails
 
-**Content Filtering and Sanitization** (5)
+**D1.1 Content filtering and sanitization** (5)
 
 - **JailGuard** — [JailGuard: A Universal Detection Framework for Prompt-based Attacks on LLM Systems](https://doi.org/10.1145/3724393)  
   *Zhang et al. · 2025*
@@ -85,7 +85,16 @@
 - **Tool Result Parsing** — [Defense Against Indirect Prompt Injection via Tool Result Parsing](https://arxiv.org/abs/2601.04795)  
   *Yu et al. · 2026*
 
-**Adversarial Training and Alignment** (4)
+**D1.2 Guardrail classifiers** (3)
+
+- **PIGuard** — [PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free](https://doi.org/10.18653/v1/2025.acl-long.1468)  
+  *Li et al. · 2025*
+- **PromptArmor** — [PromptArmor: Simple yet Effective Prompt Injection Defenses](https://arxiv.org/abs/2507.15219)  
+  *Shi et al. · 2025*
+- **PromptShield** — [PromptShield: Deployable Detection for Prompt Injection Attacks](https://doi.org/10.1145/3714393.3726501)  
+  *Jacob et al. · 2025*
+
+**D1.3 Adversarial training and alignment** (4)
 
 - **X-Teaming** — [X-Teaming: Multi-Turn Jailbreaks and Defenses with Adaptive Multi-Agents](https://arxiv.org/abs/2504.13203)  
   *Rahman et al. · 2025*
@@ -96,18 +105,9 @@
 - **SecAlign** — [SecAlign: Defending Against Prompt Injection with Preference Optimization](https://doi.org/10.1145/3719027.3744836)  
   *Chen et al. · 2025*
 
-**Guardrail Classifiers** (3)
-
-- **PIGuard** — [PIGuard: Prompt Injection Guardrail via Mitigating Overdefense for Free](https://doi.org/10.18653/v1/2025.acl-long.1468)  
-  *Li et al. · 2025*
-- **PromptArmor** — [PromptArmor: Simple yet Effective Prompt Injection Defenses](https://arxiv.org/abs/2507.15219)  
-  *Shi et al. · 2025*
-- **PromptShield** — [PromptShield: Deployable Detection for Prompt Injection Attacks](https://doi.org/10.1145/3714393.3726501)  
-  *Jacob et al. · 2025*
-
 ### 🟩 D2 — Runtime Agent Monitoring and Execution Control
 
-**Runtime Monitoring and Guardrails** (10)
+**D2.1 Runtime monitoring and guardrails** (10)
 
 - **AgentMonitor** — [AGENTMONITOR: A PLUG-AND-PLAY FRAMEWORK FOR PREDICTIVE AND SECURE MULTI-AGENT SYSTEMS](https://arxiv.org/abs/2408.14972)  
   *Chan et al. · 2024*
@@ -130,7 +130,7 @@
 - **AgentVisor** — [AgentVisor: Defending LLM Agents Against Prompt Injection via Semantic Virtualization](https://arxiv.org/abs/2604.24118)  
   *Ying et al. · 2026*
 
-**Execution Isolation and Sandboxing** (2)
+**D2.2 Execution isolation and sandboxing** (2)
 
 - **CaMeL** — [Defeating Prompt Injections by Design / CaMeL](https://arxiv.org/abs/2503.18813)  
   *Debenedetti et al. · 2025*
@@ -139,22 +139,7 @@
 
 ### 🟦 D3 — Reasoning-Aware Process Defenses
 
-**Reasoning-Trace Monitoring** (6)
-
-- **AgentDoG** — [AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security](https://arxiv.org/abs/2601.18491)  
-  *Liu et al. · 2026*
-- **Reasoning-Style Poisoning** — [Reasoning-Style Poisoning of LLM Agents via Stealthy Style Transfer: Process-Level Attacks and Runtime Monitoring in RSV Space](https://arxiv.org/abs/2512.14448)  
-  *Zhou and Wang · 2026*
-- **CoT Obfuscation** — [CAN REASONING MODELS OBFUSCATE REASONING? STRESS-TESTING CHAIN-OF-THOUGHT MONITORABILITY](https://arxiv.org/abs/2510.19851)  
-  *Zolkowski et al. · 2025*
-- **When CoT Is Necessary** — [When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors](https://arxiv.org/abs/2507.05246)  
-  *Emmons et al. · 2025*
-- **Covertly Sandbag** — [LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring](https://doi.org/10.18653/v1/2025.ijcnlp-short.33)  
-  *Li et al. · 2025*
-- **Psg-Agent** — [PSG-AGENT: PERSONALITY-AWARE SAFETY GUARDRAIL FOR LLM-BASED AGENTS](https://arxiv.org/abs/2509.23614)  
-  *Wu et al. · 2025*
-
-**Reasoning Repair and Consistency** (7)
+**D3.1 Reasoning repair and consistency** (7)
 
 - **STAC** — [STAC: WHEN INNOCENT TOOLS FORM DANGEROUS CHAINS TO JAILBREAK LLM AGENTS](https://arxiv.org/abs/2509.25624)  
   *Li et al. · 2026*
@@ -170,3 +155,18 @@
   *Hua et al. · 2024*
 - **ICON** — [ICON: Indirect Prompt Injection Defense for Agents based on Inference-Time Correction](https://arxiv.org/abs/2602.20708)  
   *Wang et al. · 2026*
+
+**D3.2 Reasoning-trace monitoring** (6)
+
+- **AgentDoG** — [AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security](https://arxiv.org/abs/2601.18491)  
+  *Liu et al. · 2026*
+- **Reasoning-Style Poisoning** — [Reasoning-Style Poisoning of LLM Agents via Stealthy Style Transfer: Process-Level Attacks and Runtime Monitoring in RSV Space](https://arxiv.org/abs/2512.14448)  
+  *Zhou and Wang · 2026*
+- **CoT Obfuscation** — [CAN REASONING MODELS OBFUSCATE REASONING? STRESS-TESTING CHAIN-OF-THOUGHT MONITORABILITY](https://arxiv.org/abs/2510.19851)  
+  *Zolkowski et al. · 2025*
+- **When CoT Is Necessary** — [When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors](https://arxiv.org/abs/2507.05246)  
+  *Emmons et al. · 2025*
+- **Covertly Sandbag** — [LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring](https://doi.org/10.18653/v1/2025.ijcnlp-short.33)  
+  *Li et al. · 2025*
+- **PSG-Agent** — [PSG-AGENT: PERSONALITY-AWARE SAFETY GUARDRAIL FOR LLM-BASED AGENTS](https://arxiv.org/abs/2509.23614)  
+  *Wu et al. · 2025*

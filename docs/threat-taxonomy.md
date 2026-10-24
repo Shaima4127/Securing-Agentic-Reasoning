@@ -6,7 +6,7 @@
 
 ## Clusters
 
-| Cluster | Name | Attack classes | Papers |
+| Cluster | Name | Subclusters | Papers |
 |---|---|---|---|
 | 🟦 ![T1](https://img.shields.io/badge/T1-0173B2?style=flat-square) | Reasoning Manipulation and Backdoors | 3 | 9 |
 | 🟧 ![T2](https://img.shields.io/badge/T2-DE8F05?style=flat-square) | Indirect Prompt Injection and Tool-Chain Attacks | 3 | 10 |
@@ -27,47 +27,47 @@
 
 ● addressed  ·  ◐ partially addressed  ·  ○ present  ·  – not applicable
 
-| Paper | Cluster | Vector | Target | Pattern | Structure | Scope | G1 | G2 | G3(T) | G4(T/E) | G5 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [ShadowCoT](https://arxiv.org/abs/2504.05605) | 🟦 T1 | Training data | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | – | ○ | ○ |
-| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 T1 | Direct prompt, Model customization | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | ● | ○ | ○ |
-| [BadChain](https://arxiv.org/abs/2401.12242) | 🟦 T1 | Direct prompt | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | ◐ | ○ | ○ |
-| [DarkMind](https://arxiv.org/abs/2501.18617) | 🟦 T1 | Model customization | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | – | ○ | ○ |
-| [CoT Hijacking](https://arxiv.org/abs/2510.26418) | 🟦 T1 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ● | ● | – | ● | ○ |
-| [H-CoT](https://arxiv.org/abs/2502.12893) | 🟦 T1 | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ○ | – | ○ | ○ |
-| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 T1 | Indirect prompt | Reasoning / planning | CoT manipulation | Single-turn | Agent | ● | ● | ● | ○ | ● |
-| [Thought-Transfer](https://arxiv.org/abs/2601.19061) | 🟦 T1 | Training data | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ○ | ○ | – | ○ | ○ |
-| [ReasoningBomb](https://arxiv.org/abs/2602.00154) | 🟦 T1 | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
-| [Adaptive Attacks](https://doi.org/10.18653/v1/2025.findings-naacl.395) | 🟧 T2 | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [AdapTools](https://arxiv.org/abs/2602.20720) | 🟧 T2 | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟧 T2 | Indirect prompt | Multiple | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ○ | ● |
-| [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟧 T2 | Indirect prompt | Action / tool use | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [UDora](https://arxiv.org/abs/2503.01908) | 🟧 T2 | Indirect prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ○ | – | ● | ● |
-| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | CoT manipulation | Adaptive | Agent | ○ | ○ | – | ● | ● |
-| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | Direct prompt, Indirect prompt | Multiple | Tool manipulation, Goal hijacking | Multi-turn | Multi-agent | ○ | ○ | – | ○ | ● |
-| [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Agent | ○ | ○ | – | ○ | ● |
-| [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Single-turn | Mixed | ○ | ○ | – | ○ | ● |
-| [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟧 T2 | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |
-| [Attacker Moves Second](https://arxiv.org/abs/2510.09023) | 🟩 T3 | Direct prompt | Input / perception | Goal hijacking | Adaptive | Mixed | ○ | ○ | – | ● | ● |
-| [Auto-RT](https://arxiv.org/abs/2501.01830) | 🟩 T3 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ○ | ○ | – | ● | ○ |
-| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟩 T3 | Direct prompt | Reasoning / planning | Goal hijacking | Adaptive | LLM only | ○ | ○ | ○ | ● | ○ |
-| [Chain of Attack](https://doi.org/10.18653/v1/2025.findings-acl.514) | 🟩 T3 | Direct prompt | Reasoning / planning | CoT manipulation | Multi-turn, Adaptive | LLM only | ○ | ○ | – | ● | ○ |
-| [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟩 T3 | Direct prompt | Reasoning / planning | CoT manipulation, Goal hijacking | Adaptive | LLM only | ○ | ○ | ○ | ● | ○ |
-| [STAC](https://arxiv.org/abs/2509.25624) | 🟩 T3 | Direct prompt | Action / tool use | Tool manipulation | Multi-turn, Adaptive | Agent | ○ | ○ | ◐ | ● | ● |
-| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 T3 | Direct prompt, Indirect prompt | Reasoning / planning, Action / tool use | Tool manipulation | Multi-turn | Agent | ○ | ○ | ○ | ○ | ● |
-| [CoT-LearnedObfuscation](https://arxiv.org/abs/2601.23086) | 🟪 T4 | Model customization | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
-| [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟪 T4 | Environment | Reasoning / planning | CoT manipulation, Goal hijacking | Adaptive | Agent | ● | ● | – | ● | ● |
-| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ● | ● | ○ | ● |
-| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Mixed | ● | ● | ● | ○ | ● |
-| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟪 T4 | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | ● | ○ | ○ |
+| Paper | Cluster | Subcluster | Vector | Target | Pattern | Structure | Scope | G1 | G2 | G3(T) | G4(T/E) | G5 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [ShadowCoT](https://arxiv.org/abs/2504.05605) | 🟦 T1 | T1.1 Reasoning backdoors | Training data | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | – | ○ | ○ |
+| [Unreal Thinking](https://arxiv.org/abs/2604.09235) | 🟦 T1 | T1.1 Reasoning backdoors | Direct prompt, Model customization | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | ● | ○ | ○ |
+| [BadChain](https://arxiv.org/abs/2401.12242) | 🟦 T1 | T1.1 Reasoning backdoors | Direct prompt | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | ◐ | ○ | ○ |
+| [DarkMind](https://arxiv.org/abs/2501.18617) | 🟦 T1 | T1.1 Reasoning backdoors | Model customization | Reasoning / planning | CoT manipulation, Backdoor | Single-turn | LLM only | ● | ● | – | ○ | ○ |
+| [CoT Hijacking](https://arxiv.org/abs/2510.26418) | 🟦 T1 | T1.2 Trace hijacking and poisoning | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ● | ● | – | ● | ○ |
+| [H-CoT](https://arxiv.org/abs/2502.12893) | 🟦 T1 | T1.2 Trace hijacking and poisoning | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ○ | – | ○ | ○ |
+| [Reasoning-Style Poisoning](https://arxiv.org/abs/2512.14448) | 🟦 T1 | T1.2 Trace hijacking and poisoning | Indirect prompt | Reasoning / planning | CoT manipulation | Single-turn | Agent | ● | ● | ● | ○ | ● |
+| [Thought-Transfer](https://arxiv.org/abs/2601.19061) | 🟦 T1 | T1.2 Trace hijacking and poisoning | Training data | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ○ | ○ | – | ○ | ○ |
+| [ReasoningBomb](https://arxiv.org/abs/2602.00154) | 🟦 T1 | T1.3 Reasoning amplification and DoS | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
+| [Adaptive Attacks](https://doi.org/10.18653/v1/2025.findings-naacl.395) | 🟧 T2 | T2.1 Adaptive indirect injection | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
+| [AdapTools](https://arxiv.org/abs/2602.20720) | 🟧 T2 | T2.1 Adaptive indirect injection | Indirect prompt | Action / tool use | Tool manipulation, Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
+| [Automated Prompt Injection](https://arxiv.org/abs/2606.10525) | 🟧 T2 | T2.1 Adaptive indirect injection | Indirect prompt | Multiple | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ○ | ● |
+| [AgentVigil](https://arxiv.org/abs/2505.05849) | 🟧 T2 | T2.1 Adaptive indirect injection | Indirect prompt | Action / tool use | Goal hijacking | Adaptive | Agent | ○ | ○ | – | ● | ● |
+| [UDora](https://arxiv.org/abs/2503.01908) | 🟧 T2 | T2.1 Adaptive indirect injection | Indirect prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ○ | – | ● | ● |
+| [SIRAJ](https://doi.org/10.18653/v1/2026.findings-eacl.171) | 🟧 T2 | T2.1 Adaptive indirect injection | Direct prompt, Indirect prompt | Multiple | CoT manipulation | Adaptive | Agent | ○ | ○ | – | ● | ● |
+| [Dark Side of LLMs](https://arxiv.org/abs/2507.06850) | 🟧 T2 | T2.2 Tool-chain and multi-surface compromise | Direct prompt, Indirect prompt | Multiple | Tool manipulation, Goal hijacking | Multi-turn | Multi-agent | ○ | ○ | – | ○ | ● |
+| [AgentPoison](https://arxiv.org/abs/2407.12784) | 🟧 T2 | T2.3 Memory and retrieval poisoning | Memory | Memory / knowledge | Memory poisoning | Single-turn | Agent | ○ | ○ | – | ○ | ● |
+| [PoisonedRAG](https://arxiv.org/abs/2402.07867) | 🟧 T2 | T2.3 Memory and retrieval poisoning | Memory | Memory / knowledge | Memory poisoning | Single-turn | Mixed | ○ | ○ | – | ○ | ● |
+| [MINJA](https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html) | 🟧 T2 | T2.3 Memory and retrieval poisoning | Memory | Memory / knowledge | Memory poisoning | Multi-turn | Agent | ● | ● | – | ○ | ● |
+| [Attacker Moves Second](https://arxiv.org/abs/2510.09023) | 🟩 T3 | T3.1 Inference-time adaptive attacks | Direct prompt | Input / perception | Goal hijacking | Adaptive | Mixed | ○ | ○ | – | ● | ● |
+| [Auto-RT](https://arxiv.org/abs/2501.01830) | 🟩 T3 | T3.1 Inference-time adaptive attacks | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | LLM only | ○ | ○ | – | ● | ○ |
+| [X-Teaming](https://arxiv.org/abs/2504.13203) | 🟩 T3 | T3.1 Inference-time adaptive attacks | Direct prompt | Reasoning / planning | Goal hijacking | Adaptive | LLM only | ○ | ○ | ○ | ● | ○ |
+| [Chain of Attack](https://doi.org/10.18653/v1/2025.findings-acl.514) | 🟩 T3 | T3.2 Multi-turn intent hiding | Direct prompt | Reasoning / planning | CoT manipulation | Multi-turn, Adaptive | LLM only | ○ | ○ | – | ● | ○ |
+| [ActorBreaker](https://doi.org/10.18653/v1/2025.acl-long.1207) | 🟩 T3 | T3.2 Multi-turn intent hiding | Direct prompt | Reasoning / planning | CoT manipulation, Goal hijacking | Adaptive | LLM only | ○ | ○ | ○ | ● | ○ |
+| [STAC](https://arxiv.org/abs/2509.25624) | 🟩 T3 | T3.3 Multi-turn agent exploitation | Direct prompt | Action / tool use | Tool manipulation | Multi-turn, Adaptive | Agent | ○ | ○ | ◐ | ● | ● |
+| [Unsafer in Many Turns](https://arxiv.org/abs/2602.13379) | 🟩 T3 | T3.3 Multi-turn agent exploitation | Direct prompt, Indirect prompt | Reasoning / planning, Action / tool use | Tool manipulation | Multi-turn | Agent | ○ | ○ | ○ | ○ | ● |
+| [CoT-LearnedObfuscation](https://arxiv.org/abs/2601.23086) | 🟪 T4 | T4.1 Obfuscation and monitor awareness | Model customization | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | – | ○ | ○ |
+| [Noticing the Watcher](https://arxiv.org/abs/2603.16928) | 🟪 T4 | T4.1 Obfuscation and monitor awareness | Environment | Reasoning / planning | CoT manipulation, Goal hijacking | Adaptive | Agent | ● | ● | – | ● | ● |
+| [CoT Obfuscation](https://arxiv.org/abs/2510.19851) | 🟪 T4 | T4.1 Obfuscation and monitor awareness | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Agent | ● | ● | ● | ○ | ● |
+| [When CoT Is Necessary](https://arxiv.org/abs/2507.05246) | 🟪 T4 | T4.2 CoT monitorability limits | Direct prompt | Reasoning / planning | CoT manipulation | Adaptive | Mixed | ● | ● | ● | ○ | ● |
+| [Covertly Sandbag](https://doi.org/10.18653/v1/2025.ijcnlp-short.33) | 🟪 T4 | T4.2 CoT monitorability limits | Direct prompt | Reasoning / planning | CoT manipulation | Single-turn | LLM only | ● | ● | ● | ○ | ○ |
 
-## Papers by attack class
+## Papers by subcluster
 
-Attack classes follow Fig. 3 of the paper.
+Subclusters follow Table 4 and Fig. 3 of the paper.
 
 ### 🟦 T1 — Reasoning Manipulation & Backdoors
 
-**Reasoning backdoors** (4)
+**T1.1 Reasoning backdoors** (4)
 
 - **BadChain** — [BADCHAIN: BACKDOOR CHAIN-OF-THOUGHT PROMPTING FOR LARGE LANGUAGE MODELS](https://arxiv.org/abs/2401.12242)  
   *Xiang et al. · 2024*
@@ -78,7 +78,7 @@ Attack classes follow Fig. 3 of the paper.
 - **Unreal Thinking** — [Unreal Thinking: Chain-of-Thought Hijacking via Two-stage Backdoor](https://arxiv.org/abs/2604.09235)  
   *Chang et al. · 2026*
 
-**Trace hijacking & poisoning** (4)
+**T1.2 Trace hijacking and poisoning** (4)
 
 - **CoT Hijacking** — [CHAIN-OF-THOUGHT HIJACKING](https://arxiv.org/abs/2510.26418)  
   *Zhao et al. · 2026*
@@ -89,14 +89,14 @@ Attack classes follow Fig. 3 of the paper.
 - **H-CoT** — [H-CoT: Hijacking the Chain-of-Thought Safety Reasoning Mechanism to Jailbreak Large Reasoning Models, Including OpenAI o1/o3, DeepSeek-R1, and Gemini 2.0 Flash Thinking](https://arxiv.org/abs/2502.12893)  
   *Kuo et al. · 2025*
 
-**Reasoning amplification & DoS** (1)
+**T1.3 Reasoning amplification and DoS** (1)
 
 - **ReasoningBomb** — [ReasoningBomb: A Stealthy Denial-of-Service Attack by Inducing Pathologically Long Reasoning in Large Reasoning Models](https://arxiv.org/abs/2602.00154)  
   *Liu et al. · 2026*
 
 ### 🟧 T2 — Indirect Prompt Injection & Tool-Chain Attacks
 
-**Adaptive indirect injection** (6)
+**T2.1 Adaptive indirect injection** (6)
 
 - **AdapTools** — [AdapTools: Adaptive Tool-based Indirect Prompt Injection Attacks on Agentic LLMs](https://arxiv.org/abs/2602.20720)  
   *Wang et al. · 2026*
@@ -111,12 +111,12 @@ Attack classes follow Fig. 3 of the paper.
 - **UDora** — [UDora: A Unified Red Teaming Framework against LLM Agents by Dynamically Hijacking Their Own Reasoning](https://arxiv.org/abs/2503.01908)  
   *Zhang et al. · 2025*
 
-**Tool-chain & multi-surface compromise** (1)
+**T2.2 Tool-chain and multi-surface compromise** (1)
 
 - **Dark Side of LLMs** — [The Dark Side of LLMs: Agent-based Attacks for Complete Computer Takeover](https://arxiv.org/abs/2507.06850)  
   *Lupinacci et al. · 2025*
 
-**Memory and retrieval poisoning** (3)
+**T2.3 Memory and retrieval poisoning** (3)
 
 - **AgentPoison** — [AGENTPOISON: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784)  
   *Chen et al. · 2024*
@@ -127,7 +127,7 @@ Attack classes follow Fig. 3 of the paper.
 
 ### 🟩 T3 — Adaptive & Multi-turn Attacks
 
-**Inference-time adaptive attacks** (3)
+**T3.1 Inference-time adaptive attacks** (3)
 
 - **Attacker Moves Second** — [THE ATTACKER MOVES SECOND: STRONGER ADAPTIVE ATTACKS BYPASS DEFENSES AGAINST LLM JAILBREAKS AND PROMPT INJECTIONS](https://arxiv.org/abs/2510.09023)  
   *Nasr et al. · 2025*
@@ -136,14 +136,14 @@ Attack classes follow Fig. 3 of the paper.
 - **X-Teaming** — [X-Teaming: Multi-Turn Jailbreaks and Defenses with Adaptive Multi-Agents](https://arxiv.org/abs/2504.13203)  
   *Rahman et al. · 2025*
 
-**Multi-turn intent hiding** (2)
+**T3.2 Multi-turn intent hiding** (2)
 
 - **Chain of Attack** — [Chain of Attack: Hide Your Intention through Multi-Turn Interrogation](https://doi.org/10.18653/v1/2025.findings-acl.514)  
   *Yang et al. · 2025*
 - **ActorBreaker** — [LLMs know their vulnerabilities: Uncover Safety Gaps through Natural Distribution Shifts](https://doi.org/10.18653/v1/2025.acl-long.1207)  
   *Ren et al. · 2025*
 
-**Multi-turn agent exploitation** (2)
+**T3.3 Multi-turn agent exploitation** (2)
 
 - **STAC** — [STAC: WHEN INNOCENT TOOLS FORM DANGEROUS CHAINS TO JAILBREAK LLM AGENTS](https://arxiv.org/abs/2509.25624)  
   *Li et al. · 2026*
@@ -152,7 +152,7 @@ Attack classes follow Fig. 3 of the paper.
 
 ### 🟪 T4 — Monitoring Evasion & Obfuscation
 
-**Obfuscation & monitor awareness** (3)
+**T4.1 Obfuscation and monitor awareness** (3)
 
 - **CoT-LearnedObfuscation** — [Chain-of-thought obfuscation learned from output supervision can generalise to unseen tasks](https://arxiv.org/abs/2601.23086)  
   *Hadida et al. · 2026*
@@ -161,7 +161,7 @@ Attack classes follow Fig. 3 of the paper.
 - **CoT Obfuscation** — [CAN REASONING MODELS OBFUSCATE REASONING? STRESS-TESTING CHAIN-OF-THOUGHT MONITORABILITY](https://arxiv.org/abs/2510.19851)  
   *Zolkowski et al. · 2025*
 
-**CoT monitorability limits** (2)
+**T4.2 CoT monitorability limits** (2)
 
 - **When CoT Is Necessary** — [When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors](https://arxiv.org/abs/2507.05246)  
   *Emmons et al. · 2025*
